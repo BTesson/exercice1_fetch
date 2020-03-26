@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+}
+
+table {
+    table-layout: fixed;
+    width: auto;
+    border-collapse: collapse;
+    border: 3px solid black;
+    text-align: center;
+}
+  
+thead{
+    background-color: lightslategray;
+}
+
+td{
+    border-width: 1px 0px 1px 0px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+}
+
+tbody tr:nth-child(even){
+    background-color: lightslategray;
+}
+
+th{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#cards{
+    display: flex;
+    font-family: Georgia;
+    flex-direction: row;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.5fr 1fr 3fr 0.1fr;
+    width: 400px;
+    margin: 5px;
+    background-color: black;
+}
+
+.title-card{
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    text-align: center;   
+    background-color: white;
+}
+
+.header-card{
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    background-color: green;
+}
+
+.id-card{
+    grid-row: 1 / span 2;
+    grid-column: 1;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    text-align: center;
+    align-self: center;
+    color: ivory;
+    font-size: 84px;
+}
+
+.name-card{
+    grid-row: 1;
+    grid-column: 2 / span 2;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    text-align: center;
+    align-self: center;
+    color: ivory;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.played-card{
+    grid-row: 2;
+    grid-column: 2;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    text-align: center;
+    color: ivory;
+    font-size: 14px;
+}
+
+.victory-card{
+    grid-row: 2;
+    grid-column: 3;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    text-align: center;
+    color: ivory;
+    font-size: 14px;
+}
+
+.img-card{
+    grid-row: 3;
+    grid-column: 1;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    display: block;
+    justify-self: center;
+    align-self: center;
+    background-color: gray;
+}
+
+.stats-card{
+    grid-row: 3;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    color: ivory;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.power-card{
+    grid-row: 1;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    text-align: center;
+}
+
+.number-power-card{
+    color: purple;
+}
+
+.attack-card{
+    grid-row: 2;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    text-align: center;
+}
+
+.number-attack-card{
+    color: red;
+}
+
+.armor-card{
+    grid-row: 3;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    text-align: center;
+}
+
+.number-armor-card{
+    color: royalblue;
+}
